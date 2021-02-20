@@ -80,7 +80,7 @@ const Home = () => {
                 "CSS",
                 "SCSS",
                 "JavaScript",
-                "Typescript",
+                "TypeScript",
                 "React",
             ],
         },
