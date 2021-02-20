@@ -10,9 +10,7 @@ const Header = () => {
                 rel="stylesheet"
             />
 
-            <Link to="/" xs={1} className="header-title">
-                JPig
-            </Link>
+            <div className="header-title">JPig</div>
 
             <nav xs={9} className="header-nav">
                 <a
