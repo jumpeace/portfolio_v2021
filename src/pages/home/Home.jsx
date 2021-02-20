@@ -191,7 +191,7 @@ const Home = () => {
                         <p>
                             少しでも人の役に立てるWebサービスを作れるように開発をし続けます
                         </p>
-                        <p>日々精進</p>
+                        <p>日々精進(ｼｺｼｺ)</p>
                     </pre>
                 </section>
                 <section className="articles">

@@ -15,9 +15,6 @@ const Header = () => {
             </Link>
 
             <nav xs={9} className="header-nav">
-                <Link to="/" className="header-nav-item">
-                    Home
-                </Link>
                 <a
                     href="mailto:jpig.main@gmail.com"
                     className="header-nav-item"
