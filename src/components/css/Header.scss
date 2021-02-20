@@ -1,5 +1,5 @@
 $header_title_width_lg: 300px;
-$header_links_width_lg: 250px;
+$header_links_width_lg: 300px;
 $header_height_lg: 120px;
 $header_background_color: #f8f8f8;
 $header_bottom_shadow_color: #f4f4f4;
@@ -9,7 +9,7 @@ $header_nav_font_color_hover: #334;
 .header {
     height: $header_height_lg;
     display: grid;
-    grid-template-columns: [_title]$header_title_width_lg 20px [_nav] 1fr [_links] $header_links_width_lg;
+    grid-template-columns: [_title]$header_title_width_lg 20px 1fr [_links]$header_links_width_lg;
     background-color: $header_background_color;
     box-shadow: 8px 8px $header_bottom_shadow_color;
 
@@ -26,8 +26,8 @@ $header_nav_font_color_hover: #334;
         text-shadow: 2px 2px #666;
     }
 
-    &-nav {
-        grid-column: _nav;
+    &-links {
+        grid-column: _links;
         display: inline-block;
         line-height: $header_height_lg;
         font-size: 24px;
@@ -42,26 +42,6 @@ $header_nav_font_color_hover: #334;
         }
         &-item + &-item {
             margin-left: 30px;
-        }
-    }
-    &-links {
-        grid-column: _links;
-        align-self: center;
-        padding-top: 40px;
-        &-item {
-            img {
-                width: 40px;
-                height: 40px;
-                object-fit: cover;
-                border-radius: 50%;
-                opacity: 80%;
-            }
-            &:hover {
-                opacity: 60%;
-            }
-        }
-        &-item + &-item {
-            margin-left: 15px;
         }
     }
 }
