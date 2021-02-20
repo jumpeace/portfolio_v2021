@@ -128,7 +128,7 @@ const Home = () => {
             ],
         },
         {
-            title: "Web×Iot メイカーズチャレンジ2020-21 in長野",
+            title: "Web×IoT メイカーズチャレンジ2020-21 in長野",
             when: "2021/12/6～7",
             overViewImgFilename: "WebIoT_2020-21_Nagano.png",
             details: [
