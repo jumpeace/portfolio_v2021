@@ -62,11 +62,11 @@ const Home = () => {
         {
             when: "2020/12/5~6",
             what:
-                "Web×Iot メイカーズチャレンジ 2020-21 in長野 、Team Janbiとして特別賞受賞",
+                "Web×Iot メイカーズチャレンジ 2020-21 in信州 、Team Janbiとして特別賞受賞",
         },
         { when: "2021/1/2", what: "初めてログインフォームを実装" },
         { when: "2021/1/18", what: "Djangoを学び始める" },
-        { when: "2021/?/?", what: "Portfolioが完成" },
+        { when: "2021/2/21", what: "Portfolioが完成" },
     ]);
     const [skills] = useState([
         {
@@ -104,7 +104,7 @@ const Home = () => {
     const [works] = useState([
         {
             title: "JPig's Portfolio",
-            when: "2021/2/20",
+            when: "2021/2/21",
             overViewImgFilename: "Portfolio.png",
             details: [
                 "以前、Webページ(MyPage#1)を一度製作したのですが、以前のものはWebの学び始めたばかりの頃に製作しており、今ならもっと素晴らしいWebサイトができるのではないかと思い、Portfolioを製作をしました。",
@@ -123,12 +123,12 @@ const Home = () => {
                 },
                 {
                     url: "https://github.com/JPig-Main/portfolio",
-                    description: "プログラムソース(GitHUb)",
+                    description: "ソース（GitHub）",
                 },
             ],
         },
         {
-            title: "Web×IoT メイカーズチャレンジ2020-21 in長野",
+            title: "Web×IoT メイカーズチャレンジ2020-21 in信州",
             when: "2021/12/6～7",
             overViewImgFilename: "WebIot_2020-21_Nagano.png",
             details: [
@@ -147,7 +147,7 @@ const Home = () => {
                     url:
                         "https://twitter.com/BonyChops/status/1335522002262577153",
                     description:
-                        "Web×Iotメイカーズチャレンジ2020-21 in 長野　特別賞受賞 (Twitter@BonyChops)",
+                        "Web×Iotメイカーズチャレンジ2020-21 in 長野　特別賞受賞（Twitter@BonyChops）",
                 },
             ],
         },
@@ -169,7 +169,7 @@ const Home = () => {
                 },
                 {
                     url: "https://github.com/JPig-Main/Mypage_1",
-                    description: "プログラムソース(GitHUb)",
+                    description: "ソース(GitHub)",
                 },
             ],
         },
