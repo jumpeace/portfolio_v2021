@@ -1,0 +1,39 @@
+.titled-lists {
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(auto-fill, 350px);
+    justify-content: center;
+    .titled-list {
+        min-height: 100px;
+        header {
+            height: 50px;
+            line-height: 100px;
+
+            text-align: center;
+            font-size: 26px;
+            font-family: cursive;
+            letter-spacing: 2px;
+        }
+        .lists {
+            padding: 40px 30px 20px;
+            .list {
+                display: flex;
+                img {
+                    width: 32px;
+                    height: 32px;
+                    object-fit: cover;
+                }
+                span {
+                    padding-left: 10px;
+                    flex-grow: 1;
+                    font-size: 24px;
+                    font-weight: lighter;
+                }
+                font-size: 18px;
+            }
+            .list + .list {
+                margin-top: 10px;
+            }
+        }
+    }
+}

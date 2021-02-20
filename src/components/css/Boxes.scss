@@ -1,0 +1,155 @@
+$box_height_lg: 270px;
+$box_width_lg: 480px;
+
+.boxes {
+    display: grid;
+    grid-auto-rows: $box_height_lg;
+    grid-template-columns: repeat(auto-fill, $box_width_lg);
+    grid-row-gap: 40px;
+    grid-column-gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    $overview_theme: #fff;
+    .overview {
+        z-index: 0;
+        box-shadow: 6px 4px #eee;
+        color: $overview_theme;
+        width: $box_width_lg;
+        height: $box_height_lg;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            user-select: none;
+            opacity: 0.55;
+        }
+        position: relative;
+        figcaption,
+        .when,
+        .view-more {
+            z-index: 1;
+            position: absolute;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+
+            text-shadow: 1px 1px #555;
+        }
+        figcaption {
+            top: 35%;
+            left: 50%;
+            font-size: 26px;
+            letter-spacing: 2px;
+        }
+        .when {
+            top: 85%;
+            left: 25%;
+            font-size: 16px;
+        }
+        .view-more {
+            top: 85%;
+            left: 80%;
+            font-size: 20px;
+            cursor: pointer;
+
+            &:hover {
+                text-shadow: none;
+            }
+
+            // 下線のアニメーション
+            &::after {
+                border-bottom: solid 2px $overview_theme;
+                bottom: 0;
+                content: "";
+                display: block;
+                transition: all 0.3s ease;
+                -webkit-transition: all 0.3s ease;
+                width: 0;
+            }
+            &:hover::after {
+                width: 100%;
+            }
+        }
+    }
+
+    .details {
+        position: fixed;
+        height: 90vh;
+        width: 90vmax;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        z-index: 10;
+        overflow-y: scroll;
+
+        border: 1px solid #555;
+        background-color: #fffd;
+
+        $header_height_lg: 100px;
+        header {
+            height: $header_height_lg;
+            width: 1;
+            line-height: $header_height_lg;
+            display: grid;
+            grid-template-columns:
+                [_title]1fr
+                [_button_close]200px;
+            .title {
+                width: 100%;
+                grid-column: _title;
+                justify-self: center;
+                text-align: center;
+                font-family: cursive;
+                font-size: 36px;
+                letter-spacing: 3px;
+                overflow: hidden;
+            }
+            .close {
+                grid-column: _button_close;
+                text-align: center;
+                button {
+                    $button_border_color: #888d;
+                    $button_color: #222d;
+                    width: 100px;
+                    height: 60px;
+                    background-color: #fffd;
+                    border: 2px solid $button_border_color;
+                    color: $button_color;
+                    border-radius: 20%;
+                    font-size: 20px;
+                    cursor: pointer;
+
+                    transition: all 300ms 0s ease;
+                    -webkit-transition: all 0.3s 0s ease;
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                    &:active {
+                        // ボタンを押したときの外枠をなくす
+                        outline: none;
+                        transform: scale(0.7);
+                    }
+                }
+            }
+        }
+        .contents {
+            min-height: calc(76.9vh - #{$header_height_lg});
+            width: 1;
+            .when {
+                color: #666;
+                font-size: 16px;
+                margin-bottom: 20px;
+                margin-left: 30px;
+            }
+            .sentence p, ul.links p {
+                font-size: 18px;
+            }
+            ul.links li {
+                list-style: circle;
+            }
+        }
+    }
+}

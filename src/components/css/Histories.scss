@@ -1,0 +1,32 @@
+.histories {
+    height: 100%;
+}
+
+.history {
+    $history_height: 50px;
+    margin: auto 20px;
+    height: $history_height;
+    line-height: $history_height;
+    padding: 0   20px;
+
+    .when {
+        width: 150px;
+    }
+    .what {
+        padding-left: 20px;
+    }
+}
+
+.history + .history {
+    border-top: 1px dotted #444;
+}
+
+.history:first-child {
+    border-top: 1px dotted #444;
+    margin-top: 20px;
+}
+
+.history:last-child {
+    margin-bottom: 20px;
+    border-bottom: 1px dotted #444;
+}
