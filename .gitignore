@@ -9,7 +9,8 @@
 /coverage
 
 # production
-/build
+# TODO 変更
+# /build
 
 # misc
 .DS_Store
