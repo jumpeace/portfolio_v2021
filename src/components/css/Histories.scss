@@ -5,14 +5,17 @@
 .history {
     $history_height: 50px;
     margin: auto 20px;
-    height: $history_height;
+    min-height: $history_height;
     line-height: $history_height;
-    padding: 0   20px;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: [_when]150px [_what]1fr;
 
     .when {
-        width: 150px;
+        grid-column: _when;
     }
     .what {
+        grid-column: _what;
         padding-left: 20px;
     }
 }

@@ -2,10 +2,10 @@ import "./css/Map.css";
 
 const Map = (props) => {
     return (
-        <p>
+        <p className="map">
             <span className="title">{props.title}</span>
             <span className="colon">：</span>
-            <span>{props.value}</span>
+            <span className="value">{props.value}</span>
         </p>
     );
 }

@@ -13,20 +13,20 @@ const Header = () => {
 
             <nav className="header-links">
                 <a
-                    href="mailto:jpig.main@gmail.com"
-                    className="header-links-item"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Contact
-                </a>
-                <a
                     href="https://github.com/JPig-Main/"
                     className="header-links-item"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
                     GitHub
+                </a>
+                <a
+                    href="mailto:jpig.main@gmail.com"
+                    className="header-links-item"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Contact
                 </a>
             </nav>
         </div>

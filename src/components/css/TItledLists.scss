@@ -17,15 +17,17 @@
         .lists {
             padding: 40px 30px 20px;
             .list {
-                display: flex;
+                display: grid;
+                grid-template-columns: [_img]32px [_span]1fr;
                 img {
+                    grid-column: _img;
                     width: 32px;
                     height: 32px;
                     object-fit: cover;
                 }
                 span {
                     padding-left: 10px;
-                    flex-grow: 1;
+                    grid-column: _span;
                     font-size: 24px;
                     font-weight: lighter;
                 }
