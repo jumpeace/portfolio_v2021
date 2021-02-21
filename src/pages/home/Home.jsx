@@ -5,8 +5,8 @@ import History from "../../components/History";
 import Skills from "../../components/Skills";
 import Works from "../../components/Works";
 
-import "../css/Pages.css";
 import "./css/Home.css";
+
 
 const Home = () => {
     const [profile] = useState([
@@ -31,6 +31,7 @@ const Home = () => {
             description: "JavaScript、Python",
         },
     ]);
+
     const [myHistory] = useState([
         { date: "2002/11/7", description: "誕生" },
         { date: "2018/4/3", description: "長野工業高等専門学校入学" },
@@ -69,6 +70,7 @@ const Home = () => {
         { date: "2021/1/18", description: "Djangoを学び始める" },
         { date: "2021/2/21", description: "Portfolioが完成" },
     ]);
+
     const [skills] = useState([
         {
             title: "Frontend",
@@ -102,6 +104,7 @@ const Home = () => {
             skills: ["Unity"],
         },
     ]);
+    
     const [works] = useState([
         {
             title: "JPig's Portfolio",
@@ -176,6 +179,7 @@ const Home = () => {
         },
     ]);
 
+
     return (
         <div className="home">
             <main>
@@ -184,41 +188,50 @@ const Home = () => {
                         src={`${process.env.PUBLIC_URL}/img/hero.jpg`}
                         alt="Dzoko StachによるPixabayからの画像"
                     />
+
                     <div className="sentence">
                         <p>
                             少しでも人の役に立つWebサービスを作れるように、Web開発をし続けます
                         </p>
                     </div>
                 </section>
+
                 <section className="articles">
                     <article>
                         <div className="ar-title">
                             <div className="t-node">Profile</div>
                         </div>
+
                         <div className="contents">
                             <Profile data={profile} />
                         </div>
                     </article>
+
                     <article>
                         <div className="ar-title">
                             <div className="t-node">MyHistory</div>
                         </div>
+
                         <div className="contents">
                             <History data={myHistory} />
                         </div>
                     </article>
+
                     <article>
                         <div className="ar-title">
                             <div className="t-node">Skills</div>
                         </div>
+
                         <div className="contents">
                             <Skills data={skills} baseDir="img/skills" />
                         </div>
                     </article>
+
                     <article>
                         <div className="ar-title" name="works">
                             <div className="t-node">Works</div>
                         </div>
+
                         <div className="contents">
                             <Works data={works} baseDir="img/works" />
                         </div>
@@ -228,5 +241,6 @@ const Home = () => {
         </div>
     );
 };
+
 
 export default Home;

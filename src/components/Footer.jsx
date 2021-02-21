@@ -1,5 +1,5 @@
-
 import "./css/Footer.css";
+
 
 const Footer = () => {
     return (
@@ -8,5 +8,6 @@ const Footer = () => {
         </footer>
     );
 };
+
 
 export default Footer;

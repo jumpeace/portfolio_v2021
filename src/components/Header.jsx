@@ -25,6 +25,7 @@ const Header = () => {
     ]);
 
     const [LinkDisplay, setLinkDisplay] = useState("none");
+
     const [buttonKind, setButtonKind] = useState("segment");
 
     const changeLinkDisplay = () => {
@@ -46,7 +47,6 @@ const Header = () => {
             />
 
             <div className="title">JPig</div>
-
             <i
                 className="button material-icons"
                 onClick={() => {

@@ -3,16 +3,11 @@
 ## Overview
 
 React と SCSS を使って製作しました。
-近いうちにレスポンシブに対応させる予定です。
 
-## Update History
+## Version
 
-| Times | Date      | Contents                           |
-| :---: | :-------- | :--------------------------------- |
-|  #1   | 2021/2/20 | Portfolio完成（レスポンシブ非対応） |
+| Version |   Date    | Contents                             |
+| :-----: | :-------: | :----------------------------------- |
+|  1.1.0  | 2021/2/22 | Portfolio 完成（レスポンシブに対応させました。）                     |
+|  1.0.0  | 2021/2/20 | Portfolio 完成（レスポンシブ非対応） |
 
-small: ~647px
-medium: 648px ~ 948px
-large: 948px~
- style={{display: "none"}}
- 

@@ -1,7 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
+
 import Base from "./Base";
+
+import "./index.css";
+
 import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(

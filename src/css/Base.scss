@@ -1,24 +1,23 @@
-$container_background_color: #fcfcfc;
-
 .container {
-    // min-height: 100vh;
-    display: grid;
-    grid-template-rows: [_header]auto [_main]1fr [_footer]auto;
-    background-color: $container_background_color;
     z-index: 0;
-}
 
-.header_container {
-    grid-row: _header;
-    z-index: 2;
-}
+    background-color: #fff;
 
-.body-container {
-    grid-row: _main;
-    margin-top: 8px;
-    margin-bottom: 4px;
-}
+    display: grid;
+    grid-template-rows: [_header]auto [_body]1fr [_footer]auto;
 
-.footer_container {
-    grid-row: _footer;
+    &-header {
+        grid-row: _header;
+    }
+
+    &-body {
+        grid-row: _body;
+        
+        margin-top: 8px;
+        margin-bottom: 4px;
+    }
+
+    &-footer {
+        grid-row: _footer;
+    }
 }

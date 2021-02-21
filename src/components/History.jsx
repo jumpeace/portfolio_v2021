@@ -4,6 +4,7 @@ const Event = (props) => {
     return (
         <div className="event">
             <div className="date">{props.date}</div>
+
             <div className="description">{props.description}</div>
         </div>
     );

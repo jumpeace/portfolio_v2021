@@ -10,6 +10,7 @@ const GenreSkills = (props) => {
                             src={`${process.env.PUBLIC_URL}/${props.baseDir}/${skill}.png`}
                             alt={skill}
                         ></img>
+
                         <div className="name">{skill}</div>
                     </div>
                 );
@@ -22,6 +23,7 @@ const Genre = (props) => {
     return (
         <div className="genre">
             <div className="title">{props.title}</div>
+
             <GenreSkills genreSkills={props.skills} baseDir={props.baseDir} />
         </div>
     );

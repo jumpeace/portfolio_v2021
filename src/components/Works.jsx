@@ -9,8 +9,11 @@ const Work = (props) => {
         <div className="work">
             <div className="overview">
                 <img src={props.overviewImgPath} alt={props.title} />
+
                 <figcaption>{props.title}</figcaption>
+
                 <div className="date">{props.date}</div>
+
                 <div
                     onClick={() => setDetailsDisplay("block")}
                     className="more"
@@ -18,6 +21,7 @@ const Work = (props) => {
                     More
                 </div>
             </div>
+
             <i
                 className="clear material-icons"
                 onClick={() => setDetailsDisplay("none")}
@@ -25,16 +29,21 @@ const Work = (props) => {
             >
                 clear
             </i>
+
             <div className="details" style={{ display: detailsDisplay }}>
                 <div className="title">{props.title}</div>
+
                 <div className="description">
                     <p className="date">{props.date}</p>
+
                     <div className="sentence">
                         {props.sentence.map((paragraph) => {
                             return <p>{paragraph}</p>;
                         })}
                     </div>
-                    <p style={{userSelect:"none"}}>　</p>
+
+                    <p style={{ userSelect: "none" }}>　</p>
+
                     <ul className="links">
                         {props.links?.map((el) => {
                             return (

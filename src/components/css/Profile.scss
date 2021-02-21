@@ -11,11 +11,13 @@ ul.profile {
         font-size: 16px;
         list-style: none;
     }
+
     li + li {
         @media screen and (max-width: 648px) {
             margin-top: 20px;
         }
     }
+
     li {
         .item {
             * {
@@ -23,8 +25,8 @@ ul.profile {
                     text-align: start;
                 }
                 @media screen and (max-width: 648px) {
-                    text-align: start;
                     padding-left: 20px;
+                    text-align: start;
                 }
             }
 
@@ -35,24 +37,29 @@ ul.profile {
             @media screen and (max-width: 648px) {
                 grid-template-rows: [_title]30px [_description]1fr;
             }
+
             .title {
                 @media screen and (min-width: 649px) {
                     grid-column: _title;
                 }
                 @media screen and (max-width: 648px) {
                     grid-row: _title;
+
                     text-shadow: 1px 1px #777;
                 }
             }
+
             .separator {
-                user-select: none;
                 @media screen and (min-width: 649px) {
                     grid-column: _separator;
                 }
                 @media screen and (max-width: 648px) {
                     display: none;
                 }
+
+                user-select: none;
             }
+
             .description {
                 @media screen and (min-width: 649px) {
                     grid-column: _description;

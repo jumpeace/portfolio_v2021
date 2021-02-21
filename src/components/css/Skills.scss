@@ -3,37 +3,51 @@
     grid-auto-rows: auto;
     grid-template-columns: repeat(auto-fill, 350px);
     justify-content: center;
+
     .genre {
         min-height: 100px;
+
         .title {
             height: 50px;
+            text-align: center;
             line-height: 100px;
 
-            text-align: center;
-            font-size: 26px;
             font-family: cursive;
+            font-size: 26px;
             letter-spacing: 2px;
         }
+
         .genre-skills {
             padding: 40px 30px 20px;
+
             .skill {
+                $skill_img_width: 32px;
+
+                font-size: 18px;
+
                 display: grid;
-                grid-template-columns: [_img]32px [_span]1fr;
+                grid-template-columns: [_img]$skill_img_width [_span]1fr;
+
                 img {
                     grid-column: _img;
-                    width: 32px;
+
+                    width: $skill_img_width;
                     height: 32px;
+
                     object-fit: cover;
                     user-select: none;
                 }
+
                 .name {
-                    padding-left: 10px;
                     grid-column: _span;
+
+                    padding-left: 10px;
+
                     font-size: 24px;
                     font-weight: lighter;
                 }
-                font-size: 18px;
             }
+
             .skill + .skill {
                 margin-top: 10px;
             }

@@ -1,17 +1,17 @@
-$footer_height_lg: 60px;
-$footer_background_color: #eaeaea;
-$footer_bottom_top_color: #e8e8e8;
-$copyright_font_color: #666;
-
 footer {
+    $footer_height_lg: 60px;
+
     height: $footer_height_lg;
-    background-color: $footer_background_color;
-    box-shadow: 0px -4px $footer_bottom_top_color;
+
+    box-shadow: 0px -4px #e8e8e8;
+    background-color: #eaeaea;
     font-size: 14px;
+
     .copyright {
         text-align: center;
-        color: $copyright_font_color;
         line-height: $footer_height_lg;
+
+        color: #666;
         user-select: none;
     }
 }
