@@ -34,7 +34,7 @@ const Work = (props) => {
                             return <p>{paragraph}</p>;
                         })}
                     </div>
-                    <p>　</p>
+                    <p style={{userSelect:"none"}}>　</p>
                     <ul className="links">
                         {props.links?.map((el) => {
                             return (
@@ -66,7 +66,7 @@ const Works = (props) => {
                     <Work
                         overviewImgPath={`${process.env.PUBLIC_URL}/${props.baseDir}/${work.overViewImgFilename}`}
                         title={work.title}
-                        date={work.when}
+                        date={work.date}
                         sentence={work.sentence}
                         links={work.links}
                     />

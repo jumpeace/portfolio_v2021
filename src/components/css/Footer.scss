@@ -12,5 +12,6 @@ footer {
         text-align: center;
         color: $copyright_font_color;
         line-height: $footer_height_lg;
+        user-select: none;
     }
 }

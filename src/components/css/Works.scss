@@ -85,6 +85,7 @@ $works_width_vsm: 288px;
         .more {
             top: 85%;
             left: 80%;
+            user-select: none;
             @media screen and (min-width: 649px) {
                 font-size: 20px;
             }
@@ -177,8 +178,11 @@ $works_width_vsm: 288px;
                 }
                 margin-left: 30px;
             }
-            .sentence p,
-            .links p {
+            .sentence {
+                user-select: none;
+            }
+            .sentence,
+            .links {
                 @media screen and (min-width: 649px) {
                     font-size: 18px;
                 }

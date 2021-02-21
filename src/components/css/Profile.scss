@@ -45,6 +45,7 @@ ul.profile {
                 }
             }
             .separator {
+                user-select: none;
                 @media screen and (min-width: 649px) {
                     grid-column: _separator;
                 }
