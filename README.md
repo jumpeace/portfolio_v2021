@@ -14,3 +14,5 @@ React と SCSS を使って製作しました。
 small: ~647px
 medium: 648px ~ 948px
 large: 948px~
+ style={{display: "none"}}
+ 

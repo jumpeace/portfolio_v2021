@@ -1,0 +1,50 @@
+.history {
+    height: 100%;
+    .event {
+        display: grid;
+        @media screen and (min-width: 649px) {
+            $event_height: 50px;
+            margin: auto 20px;
+            padding: 0 20px;
+            min-height: $event_height;
+            line-height: $event_height;
+            grid-template-columns: [_date]150px [_description]1fr;
+        }
+        @media screen and (max-width: 648px) {
+            padding: 20px 20px;
+            grid-template-rows: [_date]40px [_description]1fr;
+        }
+
+        .date {
+            @media screen and (min-width: 649px) {
+                grid-column: _date;
+            }
+            @media screen and (max-width: 648px) {
+                grid-row: _date;
+            }
+        }
+        .description {
+            @media screen and (min-width: 649px) {
+                grid-column: _description;
+            }
+            @media screen and (max-width: 648px) {
+                grid-row: _description;
+            }
+            padding-left: 20px;
+        }
+    }
+
+    .event + .event {
+        border-top: 1px dotted #444;
+    }
+
+    .event:first-child {
+        border-top: 1px dotted #444;
+        margin-top: 20px;
+    }
+
+    .event:last-child {
+        margin-bottom: 20px;
+        border-bottom: 1px dotted #444;
+    }
+}

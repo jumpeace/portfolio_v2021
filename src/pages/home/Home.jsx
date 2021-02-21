@@ -1,9 +1,9 @@
 import { useState } from "react";
 
-import Map from "../../components/Map";
-import Histories from "../../components/Histories";
-import TitledLists from "../../components/TitledLists";
-import Boxes from "../../components/Boxes";
+import Profile from "../../components/Profile";
+import History from "../../components/History";
+import Skills from "../../components/Skills";
+import Works from "../../components/Works";
 
 import "../css/Pages.css";
 import "./css/Home.css";
@@ -12,66 +12,67 @@ const Home = () => {
     const [profile] = useState([
         {
             title: "誕生日",
-            value: "2002年11月7日（18歳）",
+            description: "2002年11月7日（18歳）",
         },
         {
             title: "学校・学科",
-            value: "長野工業高等専門学校　電子情報工学科",
+            description: "長野工業高等専門学校　電子情報工学科",
         },
         {
             title: "専攻",
-            value: "Web開発",
+            description: "Web開発",
         },
         {
             title: "趣味",
-            value: "MineCraft、音楽鑑賞",
+            description: "MineCraft、音楽鑑賞",
         },
         {
             title: "主要言語",
-            value: "JavaScript、Python",
+            description: "JavaScript、Python",
         },
     ]);
     const [myHistory] = useState([
-        { when: "2002/11/7", what: "誕生" },
-        { when: "2018/4/3", what: "長野工業高等専門学校入学" },
+        { date: "2002/11/7", description: "誕生" },
+        { date: "2018/4/3", description: "長野工業高等専門学校入学" },
         {
-            when: "2019/4月頃～",
-            what: "C言語の授業が始まり、プログラミングに興味を持ち始める",
+            date: "2019/4月頃～",
+            description:
+                "C言語の授業が始まり、プログラミングに興味を持ち始める",
         },
         {
-            when: "2019/10月頃",
-            what:
+            date: "2019/10月頃",
+            description:
                 "2020年10月豪雨のボランティア活動（穂保地域の住宅内の片付け）をする",
         },
-        { when: "2019/12月頃", what: "Pythonを学び始める" },
+        { date: "2019/12月頃", description: "Pythonを学び始める" },
         {
-            when: "2020/7~8月頃",
-            what:
+            date: "2020/7~8月頃",
+            description:
                 "文化祭（Covid-19のため中止）のクラス企画製作のために、Unityを本格的に使う",
         },
-        { when: "2021/8/16", what: "Web開発を学び始める" },
+        { date: "2021/8/16", description: "Web開発を学び始める" },
 
         {
-            when: "2021/9/20",
-            what: "自分自身だけで初めてJSアプリ（複数タイマー）を製作",
+            date: "2021/9/20",
+            description: "自分自身だけで初めてJSアプリ（複数タイマー）を製作",
         },
         {
-            when: "2021/11/2",
-            what: "初めてのWebページ（MyPage#1） が完成",
+            date: "2021/11/2",
+            description: "初めてのWebページ（MyPage#1） が完成",
         },
         {
-            when: "2020/12/5~6",
-            what:
+            date: "2020/12/5~6",
+            description:
                 "Web×Iot メイカーズチャレンジ 2020-21 in信州 、Team Janbiとして特別賞受賞",
         },
-        { when: "2021/1/2", what: "初めてログインフォームを実装" },
-        { when: "2021/1/18", what: "Djangoを学び始める" },
-        { when: "2021/2/21", what: "Portfolioが完成" },
+        { date: "2021/1/2", description: "初めてログインフォームを実装" },
+        { date: "2021/1/18", description: "Djangoを学び始める" },
+        { date: "2021/2/21", description: "Portfolioが完成" },
     ]);
     const [skills] = useState([
         {
             title: "Frontend",
-            lists: [
+            skills: [
                 "HTML5",
                 "CSS",
                 "SCSS",
@@ -82,31 +83,31 @@ const Home = () => {
         },
         {
             title: "Backend",
-            lists: ["Python", "Django", "PHP", "Node.js", "JSON", "MySQL"],
+            skills: ["Python", "Django", "PHP", "Node.js", "JSON", "MySQL"],
         },
         {
             title: "Document",
-            lists: ["LaTeX", "MarkDown"],
+            skills: ["LaTeX", "MarkDown"],
         },
         {
             title: "Tool",
-            lists: ["Visual Studio Code", "Git", "GitHub"],
+            skills: ["Visual Studio Code", "Git", "GitHub"],
         },
         {
             title: "School",
-            lists: ["Processing", "C", "Java"],
+            skills: ["Processing", "C", "Java"],
         },
         {
             title: "Other",
-            lists: ["Unity"],
+            skills: ["Unity"],
         },
     ]);
     const [works] = useState([
         {
             title: "JPig's Portfolio",
-            when: "2021/2/21",
+            date: "2021/2/21",
             overViewImgFilename: "Portfolio.png",
-            details: [
+            sentence: [
                 "以前、Webページ(MyPage#1)を一度製作したのですが、以前のものはWebの学び始めたばかりの頃に製作しており、今ならもっと素晴らしいWebサイトができるのではないかと思い、Portfolioを製作をしました。",
                 "製作には、Reactを使用しました。",
                 "Reactを本格的に使うのは今回が初めてでした。",
@@ -129,9 +130,9 @@ const Home = () => {
         },
         {
             title: "Web×IoT メイカーズチャレンジ2020-21 in信州",
-            when: "2021/12/6～7",
+            date: "2021/12/6～7",
             overViewImgFilename: "WebIot_2020-21_Nagano.png",
-            details: [
+            sentence: [
                 "Webを勉強している最中、このイベントを知り、自分の技術の向上のために参加しました。",
                 "5人チームで開発をしたのですが、チームメンバーに実際に企業でPHPやMySQLを使用している方、Pythonを自由自在に扱える方がいて、とても素晴らしい環境の中、開発を行いました。",
                 "私たちのチームでは、COVIDiffuserというものを製作しました。",
@@ -153,9 +154,9 @@ const Home = () => {
         },
         {
             title: "MyPage#1",
-            when: "2021/11/2",
+            date: "2021/11/2",
             overViewImgFilename: "MyPage_1.png",
-            details: [
+            sentence: [
                 "Webを学び初めて半月ほどでWebサイトを製作し始めました。",
                 "HTMLもCSSもJSも学び始めたばかりで、とても苦労しました。",
                 "とくに要素の中央揃えは数時間掛かることもあり、とても大変でした。",
@@ -176,64 +177,52 @@ const Home = () => {
     ]);
 
     return (
-        <div className="article-page">
+        <div className="home">
             <main>
                 <section className="hero">
                     <img
                         src={`${process.env.PUBLIC_URL}/img/hero.jpg`}
                         alt="Dzoko StachによるPixabayからの画像"
                     />
-                    <pre className="sentence">
+                    <div className="sentence">
                         <p>
-                            少しでも人の役に立てるWebサービスを作れるように開発をし続けます
+                            少しでも人の役に立つWebサービスを作れるように、Web開発をし続けます
                         </p>
-                        <p>日々精進</p>
-                    </pre>
+                    </div>
                 </section>
                 <section className="articles">
-                    <div className="article" name="profile">
-                        <div className="header">
+                    <article>
+                        <div className="ar-title">
                             <div className="t-node">Profile</div>
                         </div>
-                        <div className="contents profile">
-                            <ul>
-                                {profile.map((el) => {
-                                    return (
-                                        <li>
-                                            <Map
-                                                title={el.title}
-                                                value={el.value}
-                                            />
-                                        </li>
-                                    );
-                                })}
-                            </ul>
+                        <div className="contents">
+                            <Profile data={profile} />
                         </div>
-                    </div>
-                    <div className="article">
-                        <div className="header">
+                    </article>
+                    <article>
+                        <div className="ar-title">
                             <div className="t-node">MyHistory</div>
                         </div>
                         <div className="contents">
-                            <Histories data={myHistory} />
+                            <History data={myHistory} />
                         </div>
-                    </div>
-                    <div className="article">
-                        <div className="header">
+                    </article>
+                    <article>
+                        <div className="ar-title">
                             <div className="t-node">Skills</div>
                         </div>
                         <div className="contents">
-                            <TitledLists data={skills} baseDir="img/skills" />
+                            <Skills data={skills} baseDir="img/skills" />
                         </div>
-                    </div>
-                    <div className="article">
-                        <div className="header" name="works">
+                    </article>
+                    <article>
+                        <div className="ar-title" name="works">
                             <div className="t-node">Works</div>
                         </div>
                         <div className="contents">
-                            <Boxes data={works} baseDir="img/works" />
+                            <Works data={works} baseDir="img/works" />
                         </div>
-                    </div>
+                    </article>
                 </section>
             </main>
         </div>

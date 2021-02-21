@@ -1,11 +1,11 @@
-.titled-lists {
+.skills {
     display: grid;
     grid-auto-rows: auto;
     grid-template-columns: repeat(auto-fill, 350px);
     justify-content: center;
-    .titled-list {
+    .genre {
         min-height: 100px;
-        header {
+        .title {
             height: 50px;
             line-height: 100px;
 
@@ -14,9 +14,9 @@
             font-family: cursive;
             letter-spacing: 2px;
         }
-        .lists {
+        .genre-skills {
             padding: 40px 30px 20px;
-            .list {
+            .skill {
                 display: grid;
                 grid-template-columns: [_img]32px [_span]1fr;
                 img {
@@ -25,7 +25,7 @@
                     height: 32px;
                     object-fit: cover;
                 }
-                span {
+                .name {
                     padding-left: 10px;
                     grid-column: _span;
                     font-size: 24px;
@@ -33,7 +33,7 @@
                 }
                 font-size: 18px;
             }
-            .list + .list {
+            .skill + .skill {
                 margin-top: 10px;
             }
         }

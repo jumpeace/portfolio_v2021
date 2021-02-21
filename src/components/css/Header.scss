@@ -3,45 +3,76 @@ $header_links_width_lg: 300px;
 $header_height_lg: 120px;
 $header_background_color: #f8f8f8;
 $header_bottom_shadow_color: #f4f4f4;
-$header_nav_font_color: #666;
-$header_nav_font_color_hover: #334;
+$header_links_font_color: #666;
+$header_links_font_color_hover: #222;
 
-.header {
-    height: $header_height_lg;
+header {
     display: grid;
-    grid-template-columns: [_title]$header_title_width_lg 20px 1fr [_links]$header_links_width_lg;
+    height: $header_height_lg;
+    @media screen and (min-width: 429px) {
+        grid-template-columns: [_title]$header_title_width_lg 1fr;
+    }
+    @media screen and (max-width: 428px) {
+        grid-template-columns: [_title]1fr;
+    }
     background-color: $header_background_color;
     box-shadow: 8px 8px $header_bottom_shadow_color;
 
-    &-title {
+    .title {
         grid-column: _title;
+        padding-bottom: 5px;
         line-height: $header_height_lg;
         text-align: center;
         font-family: "Caveat", cursive;
-        padding-bottom: 5px;
 
         font-size: 70px;
         text-decoration: none;
         color: #000;
         text-shadow: 2px 2px #666;
     }
+    .button {
+        position: fixed;
+        top: 0%;
+        left: 100%;
+        padding-top: 70px;
+        padding-right: 70px;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        z-index: 13;
+        font-size: 50px;
+        cursor: pointer;
+        user-select: none;
+    }
 
-    &-links {
-        grid-column: _links;
-        display: inline-block;
-        line-height: $header_height_lg;
-        font-size: 24px;
+    // position: relative;
+    nav.links {
+        position: fixed;
+        height: 100vh;
+        width: 100vw;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        z-index: 11;
+        background-color: #fffd;
+
+        // display: block;
         font-family: cursive;
-        padding-top: 10px;
-        &-item {
+        grid-auto-rows: 40px;
+        grid-row-gap: 20px;
+        align-content: center;
+        justify-content: center;
+        .link {
+            // display: block;
+            // text-align: center;
+            // margin: auto;
             text-decoration: none;
-            color: $header_nav_font_color;
+            color: $header_links_font_color;
+            letter-spacing: 2px;
+            font-size: 26px;
             &:hover {
-                color: $header_nav_font_color_hover;
+                color: $header_links_font_color_hover;
             }
-        }
-        &-item + &-item {
-            margin-left: 30px;
         }
     }
 }

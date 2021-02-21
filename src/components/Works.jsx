@@ -1,37 +1,37 @@
 import { useState } from "react";
 
-import "./css/Boxes.css";
+import "./css/Works.css";
 
-const Box = (props) => {
+const Work = (props) => {
     const [detailsDisplay, setDetailsDisplay] = useState("none");
 
     return (
-        <div className="box">
-            <div className="overview theme-light">
+        <div className="work">
+            <div className="overview">
                 <img src={props.overviewImgPath} alt={props.title} />
                 <figcaption>{props.title}</figcaption>
-                <div className="when">{props.when}</div>
+                <div className="date">{props.date}</div>
                 <div
                     onClick={() => setDetailsDisplay("block")}
-                    className="view-more"
+                    className="more"
                 >
-                    View More
+                    More
                 </div>
             </div>
+            <i
+                className="clear material-icons"
+                onClick={() => setDetailsDisplay("none")}
+                style={{ display: detailsDisplay }}
+            >
+                clear
+            </i>
             <div className="details" style={{ display: detailsDisplay }}>
-                <header>
-                    <div className="title">{props.title}</div>
-                    <div className="close">
-                        <button onClick={() => setDetailsDisplay("none")}>
-                            Close
-                        </button>
-                    </div>
-                </header>
-                <div className="contents">
-                    <p className="when">{props.when}</p>
+                <div className="title">{props.title}</div>
+                <div className="description">
+                    <p className="date">{props.date}</p>
                     <div className="sentence">
-                        {props.details.map((el) => {
-                            return <p>{el}</p>;
+                        {props.sentence.map((paragraph) => {
+                            return <p>{paragraph}</p>;
                         })}
                     </div>
                     <p>　</p>
@@ -58,17 +58,17 @@ const Box = (props) => {
     );
 };
 
-const Boxes = (props) => {
+const Works = (props) => {
     return (
-        <div className="boxes">
-            {props.data.map((el) => {
+        <div className="works">
+            {props.data.map((work) => {
                 return (
-                    <Box
-                        overviewImgPath={`${process.env.PUBLIC_URL}/${props.baseDir}/${el.overViewImgFilename}`}
-                        title={el.title}
-                        details={el.details}
-                        links={el.links}
-                        when={el.when}
+                    <Work
+                        overviewImgPath={`${process.env.PUBLIC_URL}/${props.baseDir}/${work.overViewImgFilename}`}
+                        title={work.title}
+                        date={work.when}
+                        sentence={work.sentence}
+                        links={work.links}
                     />
                 );
             })}
@@ -76,4 +76,4 @@ const Boxes = (props) => {
     );
 };
 
-export default Boxes;
+export default Works;
