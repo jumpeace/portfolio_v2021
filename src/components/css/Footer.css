@@ -1,0 +1,14 @@
+footer {
+  height: 60px;
+  box-shadow: 0px -4px #e8e8e8;
+  background-color: #eaeaea;
+  font-size: 14px;
+}
+footer .copyright {
+  text-align: center;
+  line-height: 60px;
+  color: #666;
+  user-select: none;
+}
+
+/*# sourceMappingURL=Footer.css.map */

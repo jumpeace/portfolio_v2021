@@ -1,0 +1,68 @@
+header {
+  height: 120px;
+  background-color: #f8f8f8;
+  box-shadow: 8px 8px #f4f4f4;
+  display: grid;
+}
+@media screen and (min-width: 429px) {
+  header {
+    grid-template-columns: [_title] 300px 1fr;
+  }
+}
+@media screen and (max-width: 428px) {
+  header {
+    grid-template-columns: [_title] 1fr;
+  }
+}
+header .title {
+  grid-column: _title;
+  padding-bottom: 5px;
+  text-align: center;
+  line-height: 120px;
+  color: #000;
+  font-family: "Caveat", cursive;
+  font-size: 70px;
+  text-decoration: none;
+  text-shadow: 2px 2px #666;
+  user-select: none;
+}
+header .button {
+  position: fixed;
+  top: 0%;
+  left: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 13;
+  padding-top: 70px;
+  padding-right: 70px;
+  font-size: 50px;
+  cursor: pointer;
+  user-select: none;
+}
+header nav.links {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 11;
+  background-color: #fffd;
+  font-family: cursive;
+  grid-auto-rows: 40px;
+  grid-row-gap: 20px;
+  align-content: center;
+  justify-content: center;
+}
+header nav.links .link {
+  color: #666;
+  font-size: 26px;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+header nav.links .link:hover {
+  color: #222;
+}
+
+/*# sourceMappingURL=Header.css.map */

@@ -1,0 +1,43 @@
+.skills {
+  display: grid;
+  grid-auto-rows: auto;
+  grid-template-columns: repeat(auto-fill, 350px);
+  justify-content: center;
+}
+.skills .genre {
+  min-height: 100px;
+}
+.skills .genre .title {
+  height: 50px;
+  text-align: center;
+  line-height: 100px;
+  font-family: cursive;
+  font-size: 26px;
+  letter-spacing: 2px;
+}
+.skills .genre .genre-skills {
+  padding: 40px 30px 20px;
+}
+.skills .genre .genre-skills .skill {
+  font-size: 18px;
+  display: grid;
+  grid-template-columns: [_img] 32px [_span] 1fr;
+}
+.skills .genre .genre-skills .skill img {
+  grid-column: _img;
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+  user-select: none;
+}
+.skills .genre .genre-skills .skill .name {
+  grid-column: _span;
+  padding-left: 10px;
+  font-size: 24px;
+  font-weight: lighter;
+}
+.skills .genre .genre-skills .skill + .skill {
+  margin-top: 10px;
+}
+
+/*# sourceMappingURL=Skills.css.map */

@@ -1,0 +1,57 @@
+.history {
+  height: 100%;
+}
+.history .event {
+  display: grid;
+}
+@media screen and (min-width: 649px) {
+  .history .event {
+    margin: auto 20px;
+    min-height: 50px;
+    padding: 0 20px;
+    line-height: 50px;
+    grid-template-columns: [_date] 150px [_description] 1fr;
+  }
+}
+@media screen and (max-width: 648px) {
+  .history .event {
+    padding: 20px 20px;
+    grid-template-rows: [_date] 40px [_description] 1fr;
+  }
+}
+@media screen and (min-width: 649px) {
+  .history .event .date {
+    grid-column: _date;
+  }
+}
+@media screen and (max-width: 648px) {
+  .history .event .date {
+    grid-row: _date;
+  }
+}
+.history .event .description {
+  padding-left: 20px;
+}
+@media screen and (min-width: 649px) {
+  .history .event .description {
+    grid-column: _description;
+  }
+}
+@media screen and (max-width: 648px) {
+  .history .event .description {
+    grid-row: _description;
+  }
+}
+.history .event + .event {
+  border-top: 1px dotted #444;
+}
+.history .event:first-child {
+  margin-top: 20px;
+  border-top: 1px dotted #444;
+}
+.history .event:last-child {
+  margin-bottom: 20px;
+  border-bottom: 1px dotted #444;
+}
+
+/*# sourceMappingURL=History.css.map */

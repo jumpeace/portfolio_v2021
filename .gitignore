@@ -30,4 +30,3 @@ yarn-error.log*
 
 # src
 /src/**/*.css.map
-/src/**/*.css

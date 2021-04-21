@@ -1,0 +1,19 @@
+.container {
+  z-index: 0;
+  background-color: #fff;
+  display: grid;
+  grid-template-rows: [_header] auto [_body] 1fr [_footer] auto;
+}
+.container-header {
+  grid-row: _header;
+}
+.container-body {
+  grid-row: _body;
+  margin-top: 8px;
+  margin-bottom: 4px;
+}
+.container-footer {
+  grid-row: _footer;
+}
+
+/*# sourceMappingURL=Base.css.map */
