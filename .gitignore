@@ -24,9 +24,6 @@ yarn-error.log*
 /.vscode/
 
 # public
-/public/img/
-/public/*.png
-/public/*.ico
 
 # src
 /src/**/*.css.map
