@@ -126,9 +126,9 @@ const Home = () => {
             links: [
                 {
                     url:
-                        "https://twitter.com/BonyChops/status/1335522002262577153",
+                        "https://webiotmakers.github.io/2020/shinshu/",
                     description:
-                        "Web×Iotメイカーズチャレンジ2020-21 in 長野　特別賞受賞（Twitter@BonyChops）",
+                        "Web×Iotメイカーズチャレンジ2020-21　開催報告ページ",
                 },
             ],
         },
