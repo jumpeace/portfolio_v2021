@@ -18,7 +18,7 @@ const Link = (props) => {
 const Header = () => {
     const [links] = useState([
         {
-            url: "https://github.com/JPig-Main/",
+            url: "https://github.com/jpig-com/",
             description: "GitHub",
         },
         { url: "mailto:jpig.main@gmail.com", description: "Contact" },
