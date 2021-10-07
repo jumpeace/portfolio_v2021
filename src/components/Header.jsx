@@ -18,10 +18,9 @@ const Link = (props) => {
 const Header = () => {
     const [links] = useState([
         {
-            url: "https://github.com/jpig-com/",
+            url: "https://github.com/jumpeace/",
             description: "GitHub",
         },
-        { url: "mailto:jpig.main@gmail.com", description: "Contact" },
     ]);
 
     const [LinkDisplay, setLinkDisplay] = useState("none");
@@ -46,7 +45,7 @@ const Header = () => {
                 rel="stylesheet"
             />
 
-            <div className="title">JPig</div>
+            <div className="title">Jumpei</div>
             <i
                 className="button material-icons"
                 onClick={() => {

@@ -24,7 +24,7 @@ const Home = () => {
         },
         {
             title: "最近の開発",
-            description: "Webゲーム開発",
+            description: "Web API 開発",
         }
     ]);
 
@@ -99,11 +99,11 @@ const Home = () => {
             ],
             links: [
                 {
-                    url: "https://jpig-com.github.io/portfolio/",
+                    url: "https://jumpeace.github.io/portfolio/",
                     description: "Webページ",
                 },
                 {
-                    url: "https://github.com/jpig-com/portfolio",
+                    url: "https://github.com/jumpeace/portfolio",
                     description: "ソース（GitHub）",
                 },
             ],
@@ -143,11 +143,11 @@ const Home = () => {
             ],
             links: [
                 {
-                    url: "https://jpig-com.github.io/mypage-1",
+                    url: "https://jumpeace.github.io/first-portfolio",
                     description: "Webページ",
                 },
                 {
-                    url: "https://github.com/jpig-com/mypage-1",
+                    url: "https://github.com/jumpeace/first-portfolio",
                     description: "ソース(GitHub)",
                 },
             ],
