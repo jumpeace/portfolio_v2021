@@ -54,7 +54,7 @@ const Home = () => {
                 "Web×Iot メイカーズチャレンジ 2020-21 in信州　Team Janbiとして特別賞を受賞する。",
         },
         { date: "2021/2/21", description: "現在のポートフォリオを完成させる。" },
-        { date: "2021/10/13", description: "自分のクラスのホームページを完成させる。" },
+        { date: "2021/10/13", description: "NNCT18Jのホームページを完成させる。" },
     ]);
 
     const [skills] = useState([
@@ -86,25 +86,21 @@ const Home = () => {
     
     const [works] = useState([
         {
-            title: "NNCT18J（現在）",
+            title: "NNCT18Jのホームページ",
             date: "2021/2/21",
-            overViewImgFilename: "Portfolio.png",
+            overViewImgFilename: "class-portfolio.png",
             sentence: [
-                "以前、Webページ(MyPage#1)を一度製作したのですが、以前のものはWebの学び始めたばかりの頃に製作しており、今ならもっと素晴らしいWebサイトができるのではないかと思い、Portfolioを製作をしました。",
-                "製作には、Reactを使用しました。",
-                "Reactを本格的に使うのは今回が初めてでした。",
-                "実際に使ってみると、コンポネントの考え方がとても便利で、生のHTMLを使用するのに比べて綺麗に書くことができました。",
-                "また、CSSは独特性を持たせたかったため、フレームワークは何も使用しませんでした。",
-                "全部生のCSSで書くのはやはり大変だったけど、この製作を通してさらにCSSの理解を深められました。",
-                "画像の上に文字を表示させるということは初めての試みでしたが、綺麗に表示できたので良かったです。",
+                "文化祭の際に、自分のクラスのホームページがあればいいなと思い作りました。",
+                "自分のみのサイトではないため、デザインは自分のポートフォリオ以上にこだわりました。",
+                "appleさんのサイトの配色を参考に作ったのですが、とても綺麗になったので良かったです。",
             ],
             links: [
                 {
-                    url: "https://jumpeace.github.io/portfolio/",
+                    url: "https://nnct18j.com",
                     description: "Webページ",
                 },
                 {
-                    url: "https://github.com/jumpeace/portfolio",
+                    url: "https://github.com/NNCT18J/NNCT18J.github.io",
                     description: "ソース（GitHub）",
                 },
             ],
@@ -135,7 +131,7 @@ const Home = () => {
         },
         {
             title: "Web×IoT メイカーズチャレンジ2020-21 in信州",
-            date: "2021/12/6～7",
+            date: "2020/12/6～7",
             overViewImgFilename: "WebIot_2020-21_Nagano.png",
             sentence: [
                 "Webを勉強している最中、このイベントを知り、自分の技術の向上のために参加しました。",
@@ -159,7 +155,7 @@ const Home = () => {
         },
         {
             title: "初めてのポートフォリオ",
-            date: "2021/11/2",
+            date: "2020/11/2",
             overViewImgFilename: "MyPage_1.png",
             sentence: [
                 "HTMLもCSSもJSも学び始めたばかりで、とても苦労しました。",
