@@ -85,6 +85,30 @@ const Home = () => {
     
     const [works] = useState([
         {
+            title: "NNCT18J（現在）",
+            date: "2021/2/21",
+            overViewImgFilename: "Portfolio.png",
+            sentence: [
+                "以前、Webページ(MyPage#1)を一度製作したのですが、以前のものはWebの学び始めたばかりの頃に製作しており、今ならもっと素晴らしいWebサイトができるのではないかと思い、Portfolioを製作をしました。",
+                "製作には、Reactを使用しました。",
+                "Reactを本格的に使うのは今回が初めてでした。",
+                "実際に使ってみると、コンポネントの考え方がとても便利で、生のHTMLを使用するのに比べて綺麗に書くことができました。",
+                "また、CSSは独特性を持たせたかったため、フレームワークは何も使用しませんでした。",
+                "全部生のCSSで書くのはやはり大変だったけど、この製作を通してさらにCSSの理解を深められました。",
+                "画像の上に文字を表示させるということは初めての試みでしたが、綺麗に表示できたので良かったです。",
+            ],
+            links: [
+                {
+                    url: "https://jumpeace.github.io/portfolio/",
+                    description: "Webページ",
+                },
+                {
+                    url: "https://github.com/jumpeace/portfolio",
+                    description: "ソース（GitHub）",
+                },
+            ],
+        },
+        {
             title: "ポートフォリオ（現在）",
             date: "2021/2/21",
             overViewImgFilename: "Portfolio.png",
