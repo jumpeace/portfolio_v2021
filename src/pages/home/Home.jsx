@@ -46,14 +46,15 @@ const Home = () => {
         },
         {
             date: "2021/11/2",
-            description: "初めてのポートフォリオが完成する。",
+            description: "初めてのポートフォリオを完成させる。",
         },
         {
             date: "2020/12/5~6",
             description:
                 "Web×Iot メイカーズチャレンジ 2020-21 in信州　Team Janbiとして特別賞を受賞する。",
         },
-        { date: "2021/2/21", description: "現在のポートフォリオが完成する。" },
+        { date: "2021/2/21", description: "現在のポートフォリオを完成させる。" },
+        { date: "2021/10/13", description: "自分のクラスのホームページを完成させる。" },
     ]);
 
     const [skills] = useState([
@@ -123,11 +124,11 @@ const Home = () => {
             ],
             links: [
                 {
-                    url: "https://jumpeace.github.io/portfolio/",
+                    url: "https://jumpeace.github.io",
                     description: "Webページ",
                 },
                 {
-                    url: "https://github.com/jumpeace/portfolio",
+                    url: "https://github.com/jumpeace/jumpeace.github.io",
                     description: "ソース（GitHub）",
                 },
             ],
