@@ -12,19 +12,19 @@ const Home = () => {
     const [profile] = useState([
         {
             title: "学校",
-            description: "工業系の高等専門学校",
+            description: "長野高専",
         },
         {
             title: "学科",
-            description: "情報工学科",
+            description: "電子情報工学科",
         },
         {
             title: "専攻",
-            description: "Web開発",
+            description: "Webフロント, Webバックエンド",
         },
         {
-            title: "最近の開発",
-            description: "Web API 開発",
+            title: "今後したいこと",
+            description: "機械学習, IoT",
         }
     ]);
 
@@ -63,6 +63,7 @@ const Home = () => {
             skills: ["CSS", "jQuery", "HTML5", "React", "SCSS", "TailWind CSS"],
         },
         {
+            // TODO Sinatra加える
             title: "Backend",
             skills: ["Django", "JSON"],
         },
@@ -187,7 +188,7 @@ const Home = () => {
 
                     <div className="sentence">
                         <p>
-                            人の役に立つITサービスを開発できるように努力し続けます
+                            ITで世の中に貢献できるように勉強し続けます。
                         </p>
                     </div>
                 </section>
