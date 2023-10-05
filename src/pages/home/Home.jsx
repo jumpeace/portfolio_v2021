@@ -11,20 +11,16 @@ import "./css/Home.css";
 const Home = () => {
     const [profile] = useState([
         {
-            title: "学校",
-            description: "長野高専",
+            title: "School",
+            description: "Tokyo University of Agriculture and Technology",
         },
         {
-            title: "学科",
-            description: "電子情報工学科",
+            title: "Major",
+            description: "Computer Science",
         },
         {
-            title: "専攻",
-            description: "Webフロント, Webバックエンド",
-        },
-        {
-            title: "今後したいこと",
-            description: "機械学習, IoT",
+            title: "Studying Now...",
+            description: "Web App, English Conversation",
         }
     ]);
 
