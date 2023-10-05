@@ -11,6 +11,10 @@ import "./css/Home.css";
 const Home = () => {
     const [profile] = useState([
         {
+            title: "Birthday",
+            description: "Nov. 7th, 2002 (20 years old)",
+        },
+        {
             title: "School",
             description: "Tokyo University of Agriculture and Technology",
         },
